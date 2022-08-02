@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login operations" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-01T21:38:46" hostname="alebusgo-X450CC" time="15.641">
+  <properties/>
+  <testcase name="Login to the web" classname="Login operations" time="15.641"/>
+  <system-out><![CDATA[16:38:47.067 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/src/test/resources/features/login.feature
+16:38:47.202 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Login to the web(login-operations;login-to-the-web)
+--------------------------------------------------------------------------------
+16:38:47.204 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login operations
+16:38:47.216 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login operations
+16:38:47.345 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Login operations
+16:38:47.459 ?[92m|-- Given that "user" has opened the web site?[0m
+16:38:48.003 ?[92m|---- User go to?[0m
+16:38:48.008 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinitions.thatUserHasOpenedTheWebSite - performAs
+16:38:48.045 ?[92m|------ user opens the https://the-internet.herokuapp.com/login?[0m
+16:38:48.047 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: GoTo.performAs - {0} opens the #url
+16:38:48.104 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+16:38:48.649 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Removing resolution chrome=81 from cache (expired on Wed Jul 27 17:09:53 COT 2022)
+16:38:48.881 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: preparing request execution
+16:38:48.889 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+16:38:48.896 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+16:38:48.897 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: target auth state: UNCHALLENGED
+16:38:48.900 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000001: proxy auth state: UNCHALLENGED
+16:38:48.901 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: acquiring connection with route {s}->https://raw.githubusercontent.com:443
+16:38:48.903 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquiring endpoint (3 MINUTES)
+16:38:48.907 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+16:38:48.918 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+16:38:48.939 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000001: acquired ep-00000000
+16:38:48.939 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000001: acquired endpoint ep-00000000
+16:38:48.939 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000001: opening connection {s}->https://raw.githubusercontent.com:443
+16:38:48.940 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: connecting endpoint (30 SECONDS)
+16:38:48.940 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+16:38:48.959 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connecting to raw.githubusercontent.com/185.199.111.133:443
+16:38:48.960 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.111.133:443 with timeout 30 SECONDS
+16:38:49.071 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+16:38:49.072 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+16:38:49.073 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
+16:38:49.234 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
+16:38:49.234 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+16:38:49.234 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+16:38:49.235 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+16:38:49.239 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.com, *.github.com, www.github.com, github.io, githubusercontent.com, *.githubusercontent.com]
+16:38:49.239 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+16:38:49.240 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0: connection established 192.168.1.4:50808<->185.199.111.133:443
+16:38:49.242 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connected http-outgoing-0
+16:38:49.242 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: endpoint connected
+16:38:49.243 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+16:38:49.244 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: start execution ex-00000001
+16:38:49.245 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: executing exchange ex-00000001 over http-outgoing-0
+16:38:49.246 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+16:38:49.246 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+16:38:49.246 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+16:38:49.246 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> cache-control: max-age=0
+16:38:49.246 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> connection: keep-alive
+16:38:49.256 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+16:38:49.257 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+16:38:49.257 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+16:38:49.257 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+16:38:49.258 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+16:38:49.258 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+16:38:49.258 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+16:38:49.258 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+16:38:49.281 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+16:38:49.281 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+16:38:49.281 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 723[\r][\n]"
+16:38:49.281 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+16:38:49.282 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+16:38:49.283 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+16:38:49.283 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"[\r][\n]"
+16:38:49.284 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+16:38:49.285 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+16:38:49.285 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+16:38:49.285 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+16:38:49.287 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: C83A:1122:6F5A55:95600E:62E74999[\r][\n]"
+16:38:49.287 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+16:38:49.287 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+16:38:49.287 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Mon, 01 Aug 2022 21:38:49 GMT[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Served-By: cache-bog2260028-BOG[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Timer: S1659389929.260020,VS0,VE1[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+16:38:49.288 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "X-Fastly-Request-ID: ca3b3f1c9c948ce2a291881243ed732399f007ab[\r][\n]"
+16:38:49.289 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Expires: Mon, 01 Aug 2022 21:43:49 GMT[\r][\n]"
+16:38:49.289 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Source-Age: 125[\r][\n]"
+16:38:49.292 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+16:38:49.297 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+16:38:49.297 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+16:38:49.297 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 723
+16:38:49.297 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Cache-Control: max-age=300
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Frame-Options: deny
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-GitHub-Request-Id: C83A:1122:6F5A55:95600E:62E74999
+16:38:49.298 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Accept-Ranges: bytes
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Mon, 01 Aug 2022 21:38:49 GMT
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Via: 1.1 varnish
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Served-By: cache-bog2260028-BOG
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache: HIT
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Cache-Hits: 1
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Timer: S1659389929.260020,VS0,VE1
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << X-Fastly-Request-ID: ca3b3f1c9c948ce2a291881243ed732399f007ab
+16:38:49.299 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Expires: Mon, 01 Aug 2022 21:43:49 GMT
+16:38:49.300 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Source-Age: 125
+16:38:49.309 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000001: connection can be kept alive for 3 MINUTES
+16:38:49.315 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$7[0xffffffc1]R[0x12]#;[0xffffff94]v[0xffffffbf]~[0xffffffb6][0xfffffff3]1[0xffffff92][0xffffff9a][0xffffffc1][0x1a]x[0xffffffcb][0xffffffb5][0xffffffaf][0xffffffcf]9[0xffffffbe][0xfffffff7]8v[0xb][0x1c][0x1e]E4[0xfffffff6]$x4[0xffffffa1][0xb]*[0xffffffb1][0xffffffd1][0xffffff82][0xfffffffb]%[0xffffff93][0xffffffe0][0xffffffb3][0x10][0xffffffc1][0xffffffe5]qBY,!Y[0xffffffea] KM8,[0x10][0xfffffff0][0x19][0xffffffdd]u[0xffffff82][0x1e][0xffffffb0][0xffffffd8]L[0xffffffcb]%[0xffffff86][0xffffffa1][0xe][0xffffffb8][0xfffffff0]P[0xffffffe8]$[0xf][0x13]t[0x13]3[0xfffffff9][0xffffff84]B2[0xffffffae][0xffffffe6]|@[0xfffffff5][0x1d][0x8][0xffffffc4][0x18][0x16][0xffffff82]o[0xffffffa4][0xffffff9a]P[0xffffff94][0xffffffe7][0xffffffce]R[0xfffffff0][0x8][0xffffffdb]p[0xffffffcb][0x4][0xfffffffa][0xfffffffc][0xffffffb9][\r][0xffffff93][0x15][\n]"
+16:38:49.316 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffda][0xffffff86][0xffffffa1][0x17][0xffffffa8]Q3[0xffffffcb][0xffffffd6][0xffffffd1][0xffffff85][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]s[0x12][0x16][0x7] _d[0xffffff82][0xffffff91][0xffffff84][0xfffffff3][0x1f],[0xfffffff6][0x14]j[0x1b]F,^+[0xffffff98]1ua2[0xffffffbf]h([0xffffff8e][0xffffff94][0xffffffa2][0xffffff91]m[0xffffffa3][0xffffffeb][0xffffff9a][0xffffffb0][0xffffffbb]I[0x17]t[0xffffffdf][0xffffffbd][0xffffffef][0xffffffbb][0xffffff91][0xffffffd7]U[0xffffffbb][0xffffff82][0xffffff9e][0x3][0xffffff9b][0xffffff88][0xffffffb9][0xffffffa6]$[0xffffffa6][0xc][0xffffff9b][0xffffffa5][0xffffffe2][0xffffff83][0xffffff98]F[0xffffffd8]o[0xffffff9e]Mg[0xffffff93][0xffffffbb][0xffffffd9]`|[0xfffffffb]u4[0xffffff9c][0x7f]"}B[0xffffffce][0x8][0xffffffb9][0xffffffe3]<[0x8][0xffffff91][0xffffff90][0xffffff94][0xffffff82][0xffffff90][0xffffffc1]j[0x15]2WI[0xffffffe3]1![0x19][0xffffff91]BnB[0xffffff80][0x9]<f[0xffffffb5][0xffffffe8]=[0xffffffd1]p[0xffffffbd][[0xffffffcf][0xffffffe5][0x1b][0xfffffff4][0xffffff9c][0xffffffff][0xfffffffc][0xfffffff8][0xffffffe1][0xffffffe2][0xffffff94][0xffffffa2][0xffffffae][0xe][0x14]5[0xffffff9a]8[0xffffff83][0xffffffd1]`:[0xfffffffd]<[0xffffffb8][0x1f][0xffffff9c]R[0xffffffcf]u[0x7f]6[0xffffffbc][0xffffff83][0xffffffef][0xf][0xffffffc3][0xffffffd9]/[0xfffffff8][0xfffffff2][0xffffffcd]y s[0xffffffee]'[0x1b]*0g[0xffffffcb][0xffffffc8]nF7H][0xffffff83][0xffffff97]{[0xffffffb1]Q[0x5][\r][0xffffffb5]c[0xffffffb4][0xf][0x2][0xffffffb3][0xffffffb4][0xffffff93][0xe]C[0xffffffa7][0xffffffb3]kAD][0xffffff9d][0xffffffde][0xffffffdb][0xffffffda][0xffffff88][0xffffffec][0xffffffa5][0xffffffbc][0xffffff99][0xffffffd9][0xffffffba]t[0xffffffb5][0xffffffea]9[0xffffffea][0x10])[0xffffffb7][0xffffffca][0xffffff9e][0xfffffff2][0xffffffe2]d^N[0xffffffd8]FW[0x16][0xffffffcd][0xffffffdc]_[0x10][0xfffffff9]i|[0x1c][0xffffff93][0xffffff8e][0xfffffff9]o[0x16][0xffffff86]4'!$G[0xffffffdf]W[0xfffffff4]W*j[[0xfffffff3]xR[0xffffffae][0xffffffb6][0xc][0xffffffd0],; #[0xffffffa9][0xffffff92]5[0xffffffb5][0x7][0xffffff9c][0xffffffb5][0xffffffd0][0x7f][0xffffff90][0xffffffc7]jgs[0xfffffffc][0xffffffc2][0xb][0xffffffd9][0x0]t[0xffffff9e]^'Y[0xfffffffb][0xffffff9f][0xffffffb1][0xffffffd8]:[0xffffffbf][0xffffff8d][0xffffffa5][0xffffff9a][0xffffffad][0x7f]m[0x5]&[0xffffffaa][0xffffffa0]^[0xffffff9b][0xffffffcb][0x5]f[0xffffffae][0xffffffe0]RU[0xffffff82][0x10]MS9l[0xffffff91]4t[0xfffffffb][0xffffff8a]][0xffffffd6][0xfffffff4][0xffffff96][0xffffffa6][0xffffff9f]P[0xffffffce][0xffffffd5][0xffffffce][0xffffff93][0xffffffff][0xffffff97][0xffffffcc]p[0xfffffffd][0xfffffff3][0xffffffe8][0x1b][0xffffffcc][0xffffffa2][0xffffffd9]Q[0xffffffbe][0xffffffb2][0xffffffa3][0xffffffc7]m'[0xffffffdf][0xffffffe4][[0xfffffffb]^[0xffffffb0][0xffffff9a][0xffffffbe][0xffffffda][0xffffffda]_[0xffffffce][0xffffff80][0xffffffd2][0xffffffc1]7[0xffffffb7]][0xffffffc1]b[0xffffffee][0xffffffb5][0xffffffff]w[0xffffff83][0xffffffed][0xffffffa7];[0x15]<[0x10]4[0xffffff92][0xffffff84][0x18][\n]"
+16:38:49.316 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "BB[0xffffffba][0xffffff8e]][0xffffffb5]jo[0xffffffb9]+"[0xffffffea][0xffffffb4][0xffffffff]h"[0xffffffea]\?5[0xffffffa9][0xffffffaf]k[0xffffffec][0xffffffff]P[0xffffffea][\n]"
+16:38:49.316 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "w[0xffffffe1]K[0x13][0xffffffda][0xffffffec][0xffffff98][0xffffffe6]Y[0xfffffffd]h8m6[0xffffff9c]T[0xffffffc1][0xfffffff2][0xffffffa7][0xffffff91]z_[0xffffff95]o85p[0x1c][0x13][0xffffffe6][0xfffffff0]5[0xffffffee][0xfffffffc][0xffffff92][0xffffff96][0xffffffda][0xfffffff7][0xffffffcf][0xffffffb1][0x5][0x1d][0xffffffea]K[0xffffff9b]9[0xffffff8e][0xffffffad]e[0xfffffff7][0xffffff93][0xffffffa8]`[0xffffffda][0xffffffff][0x1a][0xffffffd2][0xffffff88][0xffffff85][0xfffffffd][0xfffffff2][0xffffff91]N[0xfffffff6]`[0xffffffdf]2[0xffffffcf][0xffffffae]E[0xffffff97][0xffffffc5][0xffffffa2][0xffffff9d][0xffffffef]'[0xffffff9d]mun.[0xffffffd3]f^[0xffffffc7][0xffffff82][0xffffffda][0xffffff82]9[0xfffffff5][0xffffffa9]`[0x5][0xffffffbc]4[0xffffffa1][0x1d]<M[0xffffffb5]A[0xffffffa7]3[[0xffffffc0][0x7f][0x0][0xffffffc1][0xffffffd0]$[0xffffff85][0x1d][\r][0x0][0x0]"
+16:38:49.319 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000000: releasing valid endpoint
+16:38:49.319 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: releasing endpoint
+16:38:49.319 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection http-outgoing-0 can be kept alive for 3 MINUTES
+16:38:49.320 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000000: connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+16:38:49.321 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Detecting chrome version using online commands.properties
+16:38:49.324 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Running command on the shell: [google-chrome, --version]
+16:38:50.209 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.Shell - Result: Google Chrome 81.0.4044.138
+16:38:50.215 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Removing resolution chrome81=81.0.4044.138 from cache (expired on Thu Jul 28 12:23:05 COT 2022)
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: preparing request execution
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - Cookie spec selected: strict
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - Auth cache not set in the context
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000002: target auth state: UNCHALLENGED
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-00000002: proxy auth state: UNCHALLENGED
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000002: acquiring connection with route {s}->https://chromedriver.storage.googleapis.com:443
+16:38:50.221 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: acquiring endpoint (3 MINUTES)
+16:38:50.222 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: endpoint lease request (3 MINUTES) [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 0 of 5; total allocated: 1 of 25]
+16:38:50.223 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: endpoint leased [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 1; route allocated: 1 of 5; total allocated: 2 of 25]
+16:38:50.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-00000002: acquired ep-00000001
+16:38:50.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-00000002: acquired endpoint ep-00000001
+16:38:50.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-00000002: opening connection {s}->https://chromedriver.storage.googleapis.com:443
+16:38:50.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: connecting endpoint (30 SECONDS)
+16:38:50.224 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connecting endpoint to https://chromedriver.storage.googleapis.com:443 (30 SECONDS)
+16:38:50.246 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1: connecting to chromedriver.storage.googleapis.com/142.250.78.48:443
+16:38:50.247 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to chromedriver.storage.googleapis.com/142.250.78.48:443 with timeout 30 SECONDS
+16:38:50.269 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+16:38:50.269 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+16:38:50.269 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Starting handshake
+16:38:50.398 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Secure session established
+16:38:50.399 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+16:38:50.399 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+16:38:50.399 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.storage.googleapis.com
+16:38:50.399 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.storage.googleapis.com, *.googleapis.com, commondatastorage.googleapis.com, *.commondatastorage.googleapis.com, storage.googleapis.com, storage.mtls.googleapis.com, *.appspot.com.storage.googleapis.com, *.content-storage.googleapis.com, *.content-storage-p2.googleapis.com, *.content-storage-upload.googleapis.com, *.content-storage-download.googleapis.com, *.storage-upload.googleapis.com, *.storage-download.googleapis.com]
+16:38:50.399 [Test worker] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory -  issuer principal: CN=GTS CA 1C3, O=Google Trust Services LLC, C=US
+16:38:50.400 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1: connection established 192.168.1.4:36444<->142.250.78.48:443
+16:38:50.400 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connected http-outgoing-1
+16:38:50.401 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: endpoint connected
+16:38:50.401 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000002: executing GET /LATEST_RELEASE_81 HTTP/1.1
+16:38:50.402 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: start execution ex-00000002
+16:38:50.402 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: executing exchange ex-00000002 over http-outgoing-1
+16:38:50.402 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> GET /LATEST_RELEASE_81 HTTP/1.1
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> user-agent: Apache-HttpClient/5.0
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> accept-encoding: gzip, deflate, br
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> cache-control: max-age=0
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> connection: keep-alive
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: chromedriver.storage.googleapis.com
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "GET /LATEST_RELEASE_81 HTTP/1.1[\r][\n]"
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+16:38:50.403 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+16:38:50.404 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "cache-control: max-age=0[\r][\n]"
+16:38:50.404 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "connection: keep-alive[\r][\n]"
+16:38:50.404 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Host: chromedriver.storage.googleapis.com[\r][\n]"
+16:38:50.404 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "[\r][\n]"
+16:38:50.426 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "X-GUploader-UploadID: ADPycdvmO3iA0W--PBNHKun0N1M20GLQolRdpbz_bKKAQzVGytQJDMI_9hyezE6KnjlLEv9-rOuFs3A5m3ky9fWefCujOEOpjgPe[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-generation: 1588710844421698[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-metageneration: 1[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-stored-content-encoding: identity[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-stored-content-length: 13[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Language: en[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-hash: crc32c=LarI6A==[\r][\n]"
+16:38:50.427 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-hash: md5=bg9RHieQqO5dwAaMZ4Ag/Q==[\r][\n]"
+16:38:50.428 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "x-goog-storage-class: STANDARD[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Accept-Ranges: bytes[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Length: 13[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Server: UploadServer[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Date: Mon, 01 Aug 2022 21:01:14 GMT[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Expires: Mon, 01 Aug 2022 22:01:14 GMT[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Cache-Control: public, max-age=3600[\r][\n]"
+16:38:50.429 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Age: 2256[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Last-Modified: Tue, 05 May 2020 20:34:04 GMT[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "ETag: "6e0f511e2790a8ee5dc0068c678020fd"[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Type: text/plain[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[\r][\n]"
+16:38:50.430 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "81.0.4044.138"
+16:38:50.431 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+16:38:50.431 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << X-GUploader-UploadID: ADPycdvmO3iA0W--PBNHKun0N1M20GLQolRdpbz_bKKAQzVGytQJDMI_9hyezE6KnjlLEv9-rOuFs3A5m3ky9fWefCujOEOpjgPe
+16:38:50.431 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-generation: 1588710844421698
+16:38:50.431 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-metageneration: 1
+16:38:50.431 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-stored-content-encoding: identity
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-stored-content-length: 13
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Language: en
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-hash: crc32c=LarI6A==
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-hash: md5=bg9RHieQqO5dwAaMZ4Ag/Q==
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << x-goog-storage-class: STANDARD
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Accept-Ranges: bytes
+16:38:50.432 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 13
+16:38:50.434 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Server: UploadServer
+16:38:50.434 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Mon, 01 Aug 2022 21:01:14 GMT
+16:38:50.434 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Expires: Mon, 01 Aug 2022 22:01:14 GMT
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Cache-Control: public, max-age=3600
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Age: 2256
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Last-Modified: Tue, 05 May 2020 20:34:04 GMT
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << ETag: "6e0f511e2790a8ee5dc0068c678020fd"
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Type: text/plain
+16:38:50.435 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+16:38:50.436 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-00000002: connection can be kept alive for 3 MINUTES
+16:38:50.437 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-00000001: releasing valid endpoint
+16:38:50.437 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: releasing endpoint
+16:38:50.437 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connection http-outgoing-1 can be kept alive for 3 MINUTES
+16:38:50.438 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-00000001: connection released [route: {s}->https://chromedriver.storage.googleapis.com:443][total available: 2; route allocated: 1 of 5; total allocated: 2 of 25]
+16:38:50.438 [Test worker] DEBUG io.github.bonigarcia.wdm.versions.VersionDetector - Latest version of chromedriver according to https://chromedriver.storage.googleapis.com/LATEST_RELEASE_81 is 81.0.4044.138
+16:38:50.440 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.138 (resolved driver for Chrome 81)
+16:38:50.447 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Storing resolution chrome=81 in cache (valid until 17:38:50 01/08/2022 COT)
+16:38:50.456 [Test worker] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Storing resolution chrome81=81.0.4044.138 in cache (valid until 16:38:50 02/08/2022 COT)
+16:38:50.482 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 81.0.4044.138 found in cache
+16:38:50.483 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/alebusgo/.cache/selenium/chromedriver/linux64/81.0.4044.138/chromedriver
+16:38:51.232 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+16:38:51.232 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, autodownload: true, browserName: chrome, chrome.silentOutput: true, driver: chrome, goog:chromeOptions: {args: [--window-size=1366,728, --ignore-certificate-errors, --disable-popup-blocking, --disable-infobars, --log-level=3], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+16:38:58.465 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+16:38:58.466 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+16:38:58.806 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/ca33e78823eee5875d3dae47f062eea0798dcfb8d209bec5cc2e551ca9894882.png
+16:38:58.814 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} opens the #url
+16:38:58.831 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+16:38:58.852 ?[92m|-- When he fills the login form?[0m
+16:38:58.879 ?[92m|---- User fill the form?[0m
+16:38:58.883 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginStepDefinitions.heFillsTheLoginForm - performAs
+16:38:58.949 ?[92m|------ user enters 'jackjackjack' into Label input username?[0m
+16:38:58.954 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} enters #theTextAsAString into #target
+16:38:59.010 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Label input username
+16:38:59.843 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/3caa4bcf5e1caf8a020c334803407ff5d17df0b53ea0053ec817299d3b92343f.png
+16:38:59.843 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-10150175226036283198
+16:38:59.844 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+16:38:59.844 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/3caa4bcf5e1caf8a020c334803407ff5d17df0b53ea0053ec817299d3b92343f.png
+16:38:59.858 ?[92m|------ user enters 'SuperSecretPassword!SuperSecretPassword' into Label input PASSWORD?[0m
+16:38:59.867 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} enters #theTextAsAString into #target
+16:38:59.869 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Label input PASSWORD
+16:39:00.734 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/cf13d3022bcee2f860179be9a49c7f5234c13f03032a0ac57812e1c5d4c139fd.png
+16:39:00.735 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-12188115905457086130
+16:39:00.735 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/cf13d3022bcee2f860179be9a49c7f5234c13f03032a0ac57812e1c5d4c139fd.png
+16:39:00.736 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+16:39:00.740 ?[92m|------ user clicks on Login button?[0m
+16:39:00.745 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: FillTheForm.performAs - {0} clicks on #target
+16:39:00.747 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login button
+16:39:01.552 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/3de6342a048b75171e3c155f55846920080055a2da9c8dd53286844f637b64fc.png
+16:39:01.553 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+16:39:01.565 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: performAs
+16:39:01.582 ?[92m|-- Then he should access to his account?[0m
+16:39:01.704 ?[92m|---- Then is logged?[0m
+16:39:01.777 ?[92m|------ user should see Login message with text value that contains: <[Your username is invalid!]>?[0m
+16:39:01.787 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IsLogged.answeredBy - {0} should see #description
+16:39:01.788 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Login message
+16:39:02.047 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for /home/alebusgo/code/projects/Intellij_Projects/EnvironmentVariablesExample/target/site/serenity/3de6342a048b75171e3c155f55846920080055a2da9c8dd53286844f637b64fc.png
+16:39:02.048 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} should see #description
+16:39:02.100 [Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Login to the web
+----------------------------------------------------------------------?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 13630
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+ago. 01, 2022 4:38:55 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1659389937,346][SEVERE]: Timed out receiving message from renderer: 0,100
+[1659389937,448][SEVERE]: Timed out receiving message from renderer: 0,100
+[1659389937,552][SEVERE]: Timed out receiving message from renderer: 0,100
+[1659389937,974][SEVERE]: Timed out receiving message from renderer: 0,100
+[1659389941,342][SEVERE]: Timed out receiving message from renderer: 0,100
+]]></system-err>
+</testsuite>

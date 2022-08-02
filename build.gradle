@@ -1,0 +1,61 @@
+defaultTasks 'clean', 'test', 'aggregate'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'com.herokuapp.the-internet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.6.0")
+    }
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
+
+configurations.all {
+    resolutionStrategy{
+        force "io.cucumber:cucumber-core:6.11.0"
+    }
+}
+
+dependencies {
+
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '2.6.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber6', version: '2.6.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.6.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.6.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.6.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-ensure', version: '2.6.0'
+
+}
+
+test{
+    systemProperties System.getProperties()
+    systemProperty "file.encoding","UTF-8"
+    testLogging.showStandardStreams = true
+    finalizedBy(aggregate)
+}
