@@ -15,12 +15,13 @@ pipeline {
              }
         }
 
-        stage("test1") {
-             steps {
-                echo 'excecuting automated test1'
-                sh 'gradle clean test aggregate'
+        stage("test3") {
+            steps {
+                echo 'excecuting automated test3'
+                sh 'gradle clean test -Denvironment=prov aggregate'
 
-             }
+            }
+
         }
     }
 }
